@@ -52,7 +52,10 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 
 .navbar #nav-links li a {
@@ -124,6 +127,7 @@ a {
     max-width: 50vw;
     height: auto;
     object-fit: cover;
+    overflow: visible;
 }
 
 .learn_more_button {
@@ -181,7 +185,78 @@ a {
 
 
 /* footer */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: clamp(20px, 4dvh, 50px);
+    border-radius: 30px 30px 0px 0px;
+    background-color: rgba(240, 240, 240, 0.5);
+    box-shadow: 0 -4px -6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    gap: 10px;
+}
 
+#footer_navigate {
+    display: flex;
+    flex-direction: row;
+}
+
+#socials_box {
+    display: flex;
+    justify-content: center;
+}
+
+#footer_links {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+#footer_links li {
+    display: inline-block;
+}
+
+#footer_links a {
+    text-decoration: none;
+}
+
+/*Social icons*/
+.icon {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon i {
+    font-size: 30px;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.mail {
+    background-color: #1da1f2;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 /* Skip to content button */
 .skip_to_content {
@@ -233,41 +308,8 @@ a {
     transform: scale(1.2);
 }
 
-/*Social icons*/
-.icon {
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-
-.icon i {
-    font-size: 20px;
-}
-
-.instagram {
-    background: linear-gradient(45deg, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-}
-
-.linkedin {
-    background-color: #0077b5;
-}
-
-.mail {
-    background-color: #1da1f2;
-}
-
-.icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-
 /* Some size fixes */
-@media (min-width: 768px) {
+@media (min-width: 825px) {
     .main_content {
         max-width: 1280px;
         margin-left: auto;
@@ -292,5 +334,12 @@ a {
 
     #information_box {
         flex-direction: row;
+    }
+}
+
+@media (min-width: 375px) {
+    .navbar #nav-links {
+        flex-direction: row;
+        gap: 1rem;
     }
 }
