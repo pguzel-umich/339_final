@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailMatez</title>
+
+    <link rel="icon" type="images/general/petinder_icon.png" href="images/general/petinder_icon.png">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css_files/reset.css">
+
+    <link rel="stylesheet" href="css_files/default.css">
+    <link rel="stylesheet" href="css_files/dark.css">
+    <link rel="stylesheet" href="css_files/forms.css">
+
+</head>
+
+<body>
+    <header>
+        <!--nav bar-->
+        <div class="navbar">
+            <a href="index.html">
+                <h1><span style="color: #d1267f;">Paw</span>some<span style="color: #d1267f;">Pals</span></h1>
+            </a>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find.html">Find Friends</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </div>
+
+        <!--skip link-->
+        <a href="#registrationForm" class="skip_to_content" tabindex=1>Skip to Content</a>
+    </header>
+
+    <a href="#registrationForm" class="up_arrow">
+        <img src="images/arrow_up.png" alt="Scroll to top" />
+    </a>
+
+    <div class="main_content">
+        <form id="registrationForm" action="https://formspree.io/f/xvgozqwo" method="post" onsubmit="funcCheckIfSame()">
+            <h1>Registration Form</h1>
+
+            <div class="fieldset_box">
+                <fieldset>
+                    <legend>Owner Information</legend>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your legal name" required>
+
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" placeholder="Your legal surname" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                    <label for="email2">Confirm Email</label>
+                    <input type="email" id="email2" name="email2" placeholder="Confirm your email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number" pattern="[0-9]{10}"
+                        required style="margin-bottom: 0px;">
+                    <p style="margin-bottom: 15px; font-size: 80%;">Format: 1234567890</p>
+
+                    <label for="DateOfBirth">Date of Birth</label>
+                    <input type="date" id="DateOfBirth" name="DateOfBirth" required>
+
+                    <label for="street">Street</label>
+                    <input id="street" name="street" type="text" placeholder="123 Main St" required>
+
+                    <div class="form_minibox">
+                        <div>
+                            <label for="city">City</label>
+                            <input id="city" name="city" type="text" placeholder="Ann Arbor" required>
+                        </div>
+                        <div>
+                            <label for="state">State</label>
+                            <select id="state" name="state" required>
+                                <option value="" disabled selected>Select State</option>
+                                <option value="MI">Michigan (MI)</option>
+                                <option value="CA">California (CA)</option>
+                                <option value="NY">New York (NY)</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="otherStateBox" class="hidden">
+                        <label for="otherState">Please specify the state</label>
+                        <input type="text" id="otherState" name="otherState" placeholder="Specify State" required>
+                    </div>
+
+                    <div class="form_minibox">
+                        <div>
+                            <label for="zip">Zip Code</label>
+                            <input id="zip" name="zip" type="text" pattern="\d{5}" placeholder="12345" required>
+                        </div>
+                        <div>
+                            <label for="country">Country</label>
+                            <input id="country" name="country" type="text" placeholder="USA" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Furry Friend Information</legend>
+
+                    <label for="type">Type</label>
+                    <select id="type" name="type" required>
+                        <option value="" disabled selected>Select type</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Bird</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="racoon">Racoon</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div id="otherTypeBox" class="hidden">
+                        <label for="otherType">Please specify the type</label>
+                        <input type="text" id="otherType" name="otherType" placeholder="Specify type" required>
+                    </div>
+
+                    <label for="breed">Breed</label>
+                    <input type="text" id="breed" name="breed" placeholder="Pet's breed or type" required>
+
+                    <label for="petname">Name</label>
+                    <input type="text" id="petname" name="petname" placeholder="Your pet's name" required>
+
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="Pet's age (in years)" min="0" required>
+
+                    <label for="medical">Medical Conditions and Vaccinations</label>
+                    <textarea id="medical" name="medical" rows="4"
+                        placeholder="Please specify if there is any medical conditions, if they are spayed/neutered, vactinated, etc."></textarea>
+
+                    <label for="traits">Special Traits or Additional Information</label>
+                    <textarea id="traits" name="traits" rows="4"
+                        placeholder="Special traits, behavior, or other details"></textarea>
+
+                    <label for="images">Upload Pet Images</label>
+                    <input type="file" id="images" name="images" accept="image/*" multiple>
+                </fieldset>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <footer>
+            <!--color scheme select-->
+            <div class="modes">
+                <label for="theme-switch">Choose theme: </label>
+                <select id="theme-switch" class="theme-switch">
+                    <option value="" selected disabled>Select Theme</option>
+                    <option value="dark-mode">Dark Mode</option>
+                    <option value="light-mode">Light Mode</option>
+                </select>
+            </div>
+
+            <!--socials_box-->
+            <div id="socials_box">
+                <ul id="footer_links">
+                    <li>
+                        <a href="https://www.instagram.com/poyrazzguzel/" class="icon instagram"
+                            aria-label="Instagram Profile">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/poyrazguzel/" class="icon linkedin"
+                            aria-label="Linkedin Profile">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:pguzel@umich.com" class="icon mail" aria-label="Developers Mail">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--footer_navigate-->
+            <div id="footer_navigate">
+                <a href="index.html">Home</a>
+                <p>&nbsp; | &nbsp;</p>
+                <a href="find.html">Find Friends</a>
+                <p>&nbsp; | &nbsp;</p>
+                <a href="join.html">Join Us</a>
+            </div>
+
+            <!--copy_rights-->
+            <div id="copy_rights">
+                <p style="font-weight: bold;">&copy; 2024 | Poyraz Guzel, TailMatez, All Rights Reserved</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/js_default.js"></script>
+    <script src="js/js_form.js"></script>
+
+
+</body>
+
+</html>

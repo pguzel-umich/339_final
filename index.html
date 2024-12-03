@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petinder</title>
+    <title>TailMatez</title>
 
     <link rel="icon" type="images/general/petinder_icon.png" href="images/general/petinder_icon.png">
 
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css_files/reset.css">
 
     <link rel="stylesheet" href="css_files/default.css">
+    <link rel="stylesheet" href="css_files/dark.css">
 
 </head>
 
@@ -21,15 +22,18 @@
     <header>
         <!--nav bar-->
         <div class="navbar">
+            <a href="index.html">
+                <h1><span style="color: #d1267f;">Paw</span>some<span style="color: #d1267f;">Pals</span></h1>
+            </a>
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="find.html">Find Friends</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="join.html">Join Us</a></li>
             </ul>
         </div>
 
         <!--skip link-->
-        <a href="#" class="skip_to_content" tabindex=1>Skip to Content</a>
+        <a href="#information_box" class="skip_to_content" tabindex=1>Skip to Content</a>
     </header>
 
     <a href="#welcome_box" class="up_arrow">
@@ -43,8 +47,9 @@
             <!--welcome_box-->
             <div id="welcome_box">
                 <div class="welcome_container">
-                    <h1>Pe<span style="color: #d1267f;">T</span>inder</h1>
-                    <h2>A place where our small friends can make new friends!!!</h2>
+                    <h1><span style="color: #d1267f;">Paw</span>some</h1>
+                    <h1><span style="color: #d1267f;">Pals</span></h1>
+                    <h2>A place where our furry friends can meet new friends!!!</h2>
                     <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                         fermentum, elit ut porta pulvinar, tellus elit convallis urna, ac convallis nulla metus non
                         augue. Vivamus non sapien eu nisl euismod ornare. Proin gravida faucibus posuere. Morbi bibendum
@@ -52,7 +57,7 @@
                         tellus nibh. Vestibulum volutpat nisl ut quam ullamcorper euismod. Interdum et malesuada fames
                         ac ante ipsum primis in faucibus.
                     </p>
-                    <a href="#information_box" class="learn_more_button">Learn More</a>
+                    <a href="#information_box" class="button">Learn More</a>
                 </div>
                 <div class="image_container">
                     <img src="images/index_cat_profile2.png" alt="sitting cat picture">
@@ -62,21 +67,16 @@
             <!--information_box-->
             <div id="information_box">
                 <div class="information_container">
-                    <img src="images/friend_favicon.png" alt="Friend favicon">
-                    <h2>Friends</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor consectetur leo. Sed
-                        tempor odio sed mauris gravida, ut posuere ex iaculis. Pellentesque augue leo, varius nec mollis
-                        eget, luctus eu elit. Integer porta urna orci, quis rutrum mi iaculis sed. Praesent placerat
-                        sodales porta. Pellentesque condimentum viverra mattis. Nullam.</p>
-                </div>
-                <div class="information_container">
                     <img src="images/mate_favicon.png" alt="Mate favicon">
-                    <h2>Mates</h2>
+                    <h2>Join Us</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper odio vitae fringilla
                         gravida. Phasellus hendrerit ornare luctus. Phasellus ac fringilla dolor. Fusce nec magna non
                         tellus euismod pharetra a in lectus. Nullam tincidunt, ligula pulvinar lacinia suscipit, enim
                         nisl semper neque, scelerisque condimentum ante mauris nec odio. Nunc tortor.</p>
+                    <a href="join.html" class="button">Go to Join Us</a>
                 </div>
+
+
                 <div class="information_container">
                     <img src="images/health_favicon.png" alt="Health favicon">
                     <h2>Health</h2>
@@ -84,8 +84,22 @@
                         sodales eleifend purus. Maecenas et finibus dui. Pellentesque cursus vitae nisi ut bibendum.
                         Quisque aliquet suscipit erat vitae posuere. Integer ut odio laoreet, porttitor velit vel,
                         vehicula tellus. In et ipsum eget urna convallis mollis.</p>
+                    <a href="#information_box" class="button ComingSoon">Learn More</a>
                 </div>
+
+
+                <div class="information_container">
+                    <img src="images/friend_favicon.png" alt="Friend favicon">
+                    <h2>Find Friends</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor consectetur leo. Sed
+                        tempor odio sed mauris gravida, ut posuere ex iaculis. Pellentesque augue leo, varius nec mollis
+                        eget, luctus eu elit. Integer porta urna orci, quis rutrum mi iaculis sed. Praesent placerat
+                        sodales porta. Pellentesque condimentum viverra mattis. Nullam.</p>
+                    <a href="find.html" class="button">Go to Find Friends</a>
+                </div>
+
             </div>
+
 
             <!--rationale_box-->
             <div id="rationale_box">
@@ -94,13 +108,22 @@
                     gravida. Phasellus hendrerit ornare luctus. Phasellus ac fringilla dolor. Fusce nec magna non
                     tellus euismod pharetra a in lectus. Nullam tincidunt, ligula pulvinar lacinia suscipit, enim
                     nisl semper neque, scelerisque condimentum ante mauris nec odio. Nunc tortor.</p>
-
             </div>
 
 
         </main>
 
         <footer>
+            <!--color scheme select-->
+            <div class="modes">
+                <label for="theme-switch">Choose theme: </label>
+                <select id="theme-switch" class="theme-switch">
+                    <option value="" selected disabled>Select Theme</option>
+                    <option value="dark-mode">Dark Mode</option>
+                    <option value="light-mode">Light Mode</option>
+                </select>
+            </div>
+
             <!--socials_box-->
             <div id="socials_box">
                 <ul id="footer_links">
@@ -126,22 +149,28 @@
 
             <!--footer_navigate-->
             <div id="footer_navigate">
-                <a href="index.html" style="color:#333;">Home</a>
+                <a href="index.html">Home</a>
                 <p>&nbsp; | &nbsp;</p>
-                <a href="find.html" style="color:#333;">Find Friends</a>
+                <a href="find.html">Find Friends</a>
                 <p>&nbsp; | &nbsp;</p>
-                <a href="about.html" style="color:#333;">About Me</a>
+                <a href="join.html">Join Us</a>
             </div>
 
             <!--copy_rights-->
             <div id="copy_rights">
-                <p style="font-weight: bold;">&copy; 2024 | Poyraz Guzel, Petinder, All Rights Reserved</p>
+                <p style="font-weight: bold;">&copy; 2024 | Poyraz Guzel, TailMatez, All Rights Reserved</p>
             </div>
 
         </footer>
     </div>
 
-    <script src="js/javascript.js"></script>
+    <script src="js/js_default.js"></script>
+
+    <script>
+        document.querySelector(".ComingSoon").addEventListener("click", function (event) {
+            alert("Health Page and Information is Coming Soon!");
+        });
+    </script>
 
 </body>
 

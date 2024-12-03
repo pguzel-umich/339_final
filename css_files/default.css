@@ -37,7 +37,8 @@ a {
 /* Navigation Bar */
 .navbar {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
     margin-bottom: clamp(20px, 4dvh, 50px);
@@ -45,6 +46,10 @@ a {
     background-color: whitesmoke;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Poppins', sans-serif;
+}
+
+.navbar h1 {
+    color: #333;
 }
 
 .navbar #nav-links {
@@ -115,7 +120,7 @@ a {
 }
 
 .welcome_container h2 {
-    margin-bottom: clamp(20px, 10vw, 50px);
+    margin-bottom: clamp(20px, 10vw, 30px);
 }
 
 .image_container {
@@ -130,7 +135,7 @@ a {
     overflow: visible;
 }
 
-.learn_more_button {
+.button {
     display: inline-block;
     background-color: #a21d5e;
     color: white;
@@ -144,8 +149,8 @@ a {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.learn_more_button:hover,
-.learn_more_button:focus {
+.button:hover,
+.button:focus {
     background-color: #EE53A3;
     transform: scale(1.1);
 }
@@ -175,12 +180,23 @@ a {
 
 .information_container h2 {
     margin: 0 0 10px 0;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #d1267f;
 }
 
 .information_container p {
     color: #333;
+}
+
+/* Rationale Box*/
+#rationale_box {
+    color: #333;
+}
+
+#rationale_box h2 {
+    margin: 0 0 10px 0;
+    font-size: 2em;
+    color: #d1267f;
 }
 
 
@@ -224,6 +240,17 @@ footer {
 
 #footer_links a {
     text-decoration: none;
+}
+
+#footer_navigate a {
+    color: #333;
+}
+
+.modes {
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 /*Social icons*/
@@ -309,7 +336,7 @@ footer {
 }
 
 /* Some size fixes */
-@media (min-width: 825px) {
+@media (min-width: 850px) {
     .main_content {
         max-width: 1280px;
         margin-left: auto;
@@ -324,7 +351,7 @@ footer {
     }
 
     .welcome_container {
-        width: 60%;
+        width: 50%;
     }
 
     #welcome_box img {
@@ -333,13 +360,35 @@ footer {
     }
 
     #information_box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 400px) {
+    .navbar #nav-links {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 540px) {
+    .navbar {
         flex-direction: row;
     }
 }
 
-@media (min-width: 375px) {
-    .navbar #nav-links {
-        flex-direction: row;
-        gap: 1rem;
+/* trinkets */
+.hidden {
+    display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
     }
 }

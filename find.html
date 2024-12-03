@@ -4,39 +4,638 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petinder</title>
+    <title>TailMatez</title>
 
-    <link rel="icon" type="images/pet_icon.png" href="images/pet_icon.png">
+    <link rel="icon" type="images/general/petinder_icon.png" href="images/general/petinder_icon.png">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css_files/reset.css">
+
+    <link rel="stylesheet" href="css_files/default.css">
+    <link rel="stylesheet" href="css_files/dark.css">
+    <link rel="stylesheet" href="css_files/find.css">
+
 </head>
 
 <body>
     <header>
         <!--nav bar-->
         <div class="navbar">
+            <a href="index.html">
+                <h1><span style="color: #d1267f;">Paw</span>some<span style="color: #d1267f;">Pals</span></h1>
+            </a>
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="find.html">Find Friends</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join Us</a></li>
             </ul>
         </div>
 
         <!--skip link-->
-        <a href="#search_bar_id" class="skip_to_main" tabindex=1>Skip to Content</a>
+        <a href="#" class="skip_to_content" tabindex=1>Skip to Content</a>
     </header>
 
-    <!--main_box-->
-    <main id="main_box">
+    <a href="#welcome_box" class="up_arrow">
+        <img src="images/arrow_up.png" alt="Scroll to top" />
+    </a>
 
-        <!--search bar-->
-        <div class="search_bar">
-            <label for="search_bar_id" id="main_content">Athlete Lookup:</label>
-            <input type="text" id="search_bar_id" placeholder="Search by name or ID...">
-        </div>
+    <div class="main_content">
+        <!--main_box-->
+        <main id="main_box">
 
-    </main>
+            <!--welcome_box-->
+            <div id="welcome_box">
+                <div class="welcome_container">
+                    <h1><span style="color: #d1267f;">Paw</span>some<span style="color: #d1267f;">Pals</span></h1>
+                    <h2>A place where our furry friends can meet new friends!!!</h2>
+                    <p style="width: 75%;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Vivamus
+                        fermentum, elit ut porta pulvinar, tellus elit convallis urna, ac convallis nulla metus non
+                        augue. Vivamus non sapien eu nisl euismod ornare. Proin gravida faucibus posuere. Morbi bibendum
+                        nisi in fermentum gravida. Aliquam suscipit nibh eu erat interdum sodales. Aliquam sit amet
+                        tellus nibh. Vestibulum volutpat nisl ut quam ullamcorper euismod. Interdum et malesuada fames
+                        ac ante ipsum primis in faucibus.
+                    </p>
+                </div>
 
+                <div class="search_bar">
+                    <label for="search_bar_id" id="main_content">PawSomePals Lookup:</label>
+                    <input type="text" id="search_bar_id" placeholder="Search by name or any other...">
+                </div>
+            </div>
+
+            <!--friend_box-->
+            <div id="friend_box">
+                <!-- Buddy -->
+                <div class="card">
+                    <div class="card-top">
+                        <img src="images/profiles/budy.png" alt="Pet Picture" class="pet-image">
+                        <div style="flex: 1;">
+                            <div style="height: 150px; overflow: scroll;">
+                                <h2>Buddy</h2>
+                                <p>Type: Dog</p>
+                                <p>Breed: Golden Retriever</p>
+                                <p>Age: 3 Years</p>
+                            </div>
+                            <div class="medical-info">
+                                <h3>Medical Information</h3>
+                                <p>Gender: <span style="font-weight: bold;">Male</span></p>
+                                <p>Vaccinated: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Sterilized: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Allergies: <span style="font-weight: bold;">None</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                            <h3>Traits</h3>
+                            <ul>
+                                <li>
+                                    <p>Loyal</p>
+                                </li>
+                                <li>
+                                    <p>Friendly</p>
+                                </li>
+                                <li>
+                                    <p>Energetic</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Information</h3>
+                            <p>Buddy is an energetic and loving dog who loves to play fetch. He enjoys long walks
+                                and is very friendly with other pets and people.</p>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div>
+                            <h3>Contacts:</h3>
+                            <p style="font-weight: bold;">Phone: </p>
+                            <p style="font-weight: bold;">E-mail: </p>
+                        </div>
+                        <div>
+                            <p>Jhon Doe</p>
+                            <p>123456789</p>
+                            <p>jdoe@umich.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maya -->
+                <div class="card">
+                    <div class="card-top">
+                        <img src="images/profiles/maya.png" alt="Pet Picture" class="pet-image">
+                        <div style="flex: 1;">
+                            <div style="height: 150px; overflow: scroll;">
+                                <h2>Maya</h2>
+                                <p>Type: Cat</p>
+                                <p>Breed: Siamese</p>
+                                <p>Age: 12 Years</p>
+
+                            </div>
+                            <div class="medical-info">
+                                <h3>Medical Information</h3>
+                                <p>Gender: <span style="font-weight: bold;">Female</span></p>
+                                <p>Vaccinated: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Sterilized: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Allergies: <span style="font-weight: bold;">None</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                            <h3>Traits</h3>
+                            <ul>
+                                <li>
+                                    <p>Talkative</p>
+                                </li>
+                                <li>
+                                    <p>Friendly</p>
+                                </li>
+                                <li>
+                                    <p>Sassy</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Information</h3>
+                            <p>Maya is a very friendly lady. She is very vocal and loves her sister, Maggie. However,
+                                she play best with other cats and small dogs.</p>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div>
+                            <h3>Contacts:</h3>
+                            <p style="font-weight: bold;">Phone: </p>
+                            <p style="font-weight: bold;">E-mail: </p>
+                        </div>
+                        <div>
+                            <p>Olivia Papas</p>
+                            <p>4344090158</p>
+                            <p>livvp@umich.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maggie -->
+                <div class="card">
+                    <div class="card-top">
+                        <img src="images/profiles/maggie.png" alt="Pet Picture" class="pet-image">
+                        <div style="flex: 1;">
+                            <div style="height: 150px; overflow: scroll;">
+                                <h2>Maggie</h2>
+                                <p>Type: Cat</p>
+                                <p>Breed: Siamese</p>
+                                <p>Age: 12 Years</p>
+
+                            </div>
+                            <div class="medical-info">
+                                <h3>Medical Information</h3>
+                                <p>Gender: <span style="font-weight: bold;">Female</span></p>
+                                <p>Vaccinated: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Sterilized: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Allergies: <span style="font-weight: bold;">None</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                            <h3>Traits</h3>
+                            <ul>
+                                <li>
+                                    <p>Shy</p>
+                                </li>
+                                <li>
+                                    <p>Playful</p>
+                                </li>
+                                <li>
+                                    <p>Affectionate</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Information</h3>
+                            <p>Maggie is a shy but loving gal. She loves napping with her person and she exercises her
+                                acrobatic skills nightly at 3 am. She would like a playmate who is equally energetic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div>
+                            <h3>Contacts:</h3>
+                            <p style="font-weight: bold;">Phone: </p>
+                            <p style="font-weight: bold;">E-mail: </p>
+                        </div>
+                        <div>
+                            <p>Olivia Papas</p>
+                            <p>4344090158</p>
+                            <p>livvp@umich.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rosie -->
+                <div class="card">
+                    <div class="card-top">
+                        <img src="images/profiles/rosie.png" alt="Pet Picture" class="pet-image">
+                        <div style="flex: 1;">
+                            <div style="height: 150px; overflow: scroll;">
+                                <h2>Rosie</h2>
+                                <p>Type: Cat</p>
+                                <p>Breed: Ragdoll</p>
+                                <p>Age: 11 Years</p>
+
+                            </div>
+                            <div class="medical-info">
+                                <h3>Medical Information</h3>
+                                <p>Gender: <span style="font-weight: bold;">Female</span></p>
+                                <p>Vaccinated: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Sterilized: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Allergies: <span style="font-weight: bold;">None</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                            <h3>Traits</h3>
+                            <ul>
+                                <li>
+                                    <p>Squeaky</p>
+                                </li>
+                                <li>
+                                    <p>Lazy</p>
+                                </li>
+                                <li>
+                                    <p>Gluttonous</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Information</h3>
+                            <p>Rosie is lap cat. She loves to lounge by the fireplace. She never refuses treats.
+                                However, she very smol and easily bullied, so she would benefit from a friend under 10
+                                pounds.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div>
+                            <h3>Contacts:</h3>
+                            <p style="font-weight: bold;">Phone: </p>
+                            <p style="font-weight: bold;">E-mail: </p>
+                        </div>
+                        <div>
+                            <p>Olivia Papas</p>
+                            <p>4344090158</p>
+                            <p>livvp@umich.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Merlin -->
+                <div class="card">
+                    <div class="card-top">
+                        <img src="images/profiles/merlin.png" alt="Pet Picture" class="pet-image">
+                        <div style="flex: 1;">
+                            <div style="height: 150px; overflow: scroll;">
+                                <h2>Merlin</h2>
+                                <p>Type: Cat</p>
+                                <p>Breed: Ragdoll</p>
+                                <p>Age: 11 Years</p>
+
+                            </div>
+                            <div class="medical-info">
+                                <h3>Medical Information</h3>
+                                <p>Gender: <span style="font-weight: bold;">Male</span></p>
+                                <p>Vaccinated: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Sterilized: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Allergies: <span style="font-weight: bold;">None</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                            <h3>Traits</h3>
+                            <ul>
+                                <li>
+                                    <p>Bossy</p>
+                                </li>
+                                <li>
+                                    <p>Sweet</p>
+                                </li>
+                                <li>
+                                    <p>Magical</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Information</h3>
+                            <p>Meet Merlin, the magical Ragdoll master of naps, and caster of
+                                irresistible "pet me" spells with his enchanting blue eyes! Note: He is very large.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div>
+                            <h3>Contacts:</h3>
+                            <p style="font-weight: bold;">Phone: </p>
+                            <p style="font-weight: bold;">E-mail: </p>
+                        </div>
+                        <div>
+                            <p>Olivia Papas</p>
+                            <p>4344090158</p>
+                            <p>livvp@umich.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delilah -->
+                <div class="card">
+                    <div class="card-top">
+                        <img src="images/profiles/delilah.png" alt="Pet Picture" class="pet-image">
+                        <div style="flex: 1;">
+                            <div style="height: 150px; overflow: scroll;">
+                                <h2>Delilah</h2>
+                                <p>Type: Dog</p>
+                                <p>Breed: English Bulldog</p>
+                                <p>Age: 5 Years</p>
+
+                            </div>
+                            <div class="medical-info">
+                                <h3>Medical Information</h3>
+                                <p>Gender: <span style="font-weight: bold;">Female</span></p>
+                                <p>Vaccinated: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Sterilized: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Allergies: <span style="font-weight: bold;">None</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                            <h3>Traits</h3>
+                            <ul>
+                                <li>
+                                    <p>Playful</p>
+                                </li>
+                                <li>
+                                    <p>Loving</p>
+                                </li>
+                                <li>
+                                    <p>Excitable</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Information</h3>
+                            <p>Delilah is a doe-eyed, shy but excitable girl. She is sweet and affectionate, but will
+                                pair best with laid-back companions
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div>
+                            <h3>Contacts:</h3>
+                            <p style="font-weight: bold;">Phone: </p>
+                            <p style="font-weight: bold;">E-mail: </p>
+                        </div>
+                        <div>
+                            <p>Olivia Papas</p>
+                            <p>4344090158</p>
+                            <p>livvp@umich.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tili -->
+                <div class="card">
+                    <div class="card-top">
+                        <img src="images/profiles/tili.png" alt="Pet Picture" class="pet-image">
+                        <div style="flex: 1;">
+                            <div style="height: 150px; overflow: scroll;">
+                                <h2>Tili</h2>
+                                <p>Type: Dog</p>
+                                <p>Breed: Cavalier - Aussie Shepard Mix</p>
+                                <p>Age: 3 Years</p>
+
+                            </div>
+                            <div class="medical-info">
+                                <h3>Medical Information</h3>
+                                <p>Gender: <span style="font-weight: bold;">Female</span></p>
+                                <p>Vaccinated: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Sterilized: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Allergies: <span style="font-weight: bold;">None</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                            <h3>Traits</h3>
+                            <ul>
+                                <li>
+                                    <p>Meek</p>
+                                </li>
+                                <li>
+                                    <p>Affectionate</p>
+                                </li>
+                                <li>
+                                    <p>Easy-going</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Information</h3>
+                            <p>Tili is a meek pup who was the runt of her litter. She is loving but timid. She is
+                                looking for mellow cats to nap with.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div>
+                            <h3>Contacts:</h3>
+                            <p style="font-weight: bold;">Phone: </p>
+                            <p style="font-weight: bold;">E-mail: </p>
+                        </div>
+                        <div>
+                            <p>Olivia Papas</p>
+                            <p>4344090158</p>
+                            <p>livvp@umich.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yuki -->
+                <div class="card">
+                    <div class="card-top">
+                        <img src="images/profiles/yuki.png" alt="Pet Picture" class="pet-image">
+                        <div style="flex: 1;">
+                            <div style="height: 150px; overflow: scroll;">
+                                <h2>Yuki</h2>
+                                <p>Type: Cat</p>
+                                <p>Breed: British Shorthair Mix</p>
+                                <p>Age: 4 Years</p>
+
+                            </div>
+                            <div class="medical-info">
+                                <h3>Medical Information</h3>
+                                <p>Gender: <span style="font-weight: bold;">Female</span></p>
+                                <p>Vaccinated: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Sterilized: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Allergies: <span style="font-weight: bold;">None</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                            <h3>Traits</h3>
+                            <ul>
+                                <li>
+                                    <p>Jealous</p>
+                                </li>
+                                <li>
+                                    <p>Adventurous</p>
+                                </li>
+                                <li>
+                                    <p>Hunter</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Information</h3>
+                            <p>Meet Yuki, the fearless white British shorthair mix with a heart full of adventure! Like
+                                a feline Indiana Jones, she’s always on the hunt, pouncing through the garden like it’s
+                                her movie set!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div>
+                            <h3>Contacts:</h3>
+                            <p style="font-weight: bold;">Phone: </p>
+                            <p style="font-weight: bold;">E-mail: </p>
+                        </div>
+                        <div>
+                            <p>Poyraz Guzel</p>
+                            <p>7189093588</p>
+                            <p>pguzel@umich.edu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dany -->
+                <div class="card">
+                    <div class="card-top">
+                        <img src="images/profiles/dany.png" alt="Pet Picture" class="pet-image">
+                        <div style="flex: 1;">
+                            <div style="height: 150px; overflow: scroll;">
+                                <h2>Dany</h2>
+                                <p>Type: Cat</p>
+                                <p>Breed: British Shorthair Mix</p>
+                                <p>Age: 5 Years</p>
+
+                            </div>
+                            <div class="medical-info">
+                                <h3>Medical Information</h3>
+                                <p>Gender: <span style="font-weight: bold;">Female</span></p>
+                                <p>Vaccinated: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Sterilized: <span style="font-weight: bold;">Yes</span></p>
+                                <p>Allergies: <span style="font-weight: bold;">Grass</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <div>
+                            <h3>Traits</h3>
+                            <ul>
+                                <li>
+                                    <p>No Brain Cells</p>
+                                </li>
+                                <li>
+                                    <p>Sleepy</p>
+                                </li>
+                                <li>
+                                    <p>Gluttonous</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Information</h3>
+                            <p>Meet Dany, the sweet British shorthair mix with a heart of gold! Though she may have an
+                                underdeveloped brain, her love for pets and gentle nature makes her the purrrfect cuddle
+                                buddy!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-contact">
+                        <div>
+                            <h3>Contacts:</h3>
+                            <p style="font-weight: bold;">Phone: </p>
+                            <p style="font-weight: bold;">E-mail: </p>
+                        </div>
+                        <div>
+                            <p>Poyraz Guzel</p>
+                            <p>7189093588</p>
+                            <p>pguzel@umich.edu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <!--color scheme select-->
+            <div class="modes">
+                <label for="theme-switch">Choose theme: </label>
+                <select id="theme-switch" class="theme-switch">
+                    <option value="" selected disabled>Select Theme</option>
+                    <option value="dark-mode">Dark Mode</option>
+                    <option value="light-mode">Light Mode</option>
+                </select>
+            </div>
+
+            <!--socials_box-->
+            <div id="socials_box">
+                <ul id="footer_links">
+                    <li>
+                        <a href="https://www.instagram.com/poyrazzguzel/" class="icon instagram"
+                            aria-label="Instagram Profile">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/poyrazguzel/" class="icon linkedin"
+                            aria-label="Linkedin Profile">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:pguzel@umich.com" class="icon mail" aria-label="Developers Mail">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--footer_navigate-->
+            <div id="footer_navigate">
+                <a href="index.html">Home</a>
+                <p>&nbsp; | &nbsp;</p>
+                <a href="find.html">Find Friends</a>
+                <p>&nbsp; | &nbsp;</p>
+                <a href="join.html">Join Us</a>
+            </div>
+
+            <!--copy_rights-->
+            <div id="copy_rights">
+                <p style="font-weight: bold;">&copy; 2024 | Poyraz Guzel, TailMatez, All Rights Reserved</p>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/js_default.js"></script>
+    <script src="js/js_find.js"></script>
 
 </body>
 

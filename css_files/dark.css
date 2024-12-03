@@ -1,0 +1,71 @@
+body.dark-mode {
+    background-image: linear-gradient(90deg, rgb(15, 45, 48), rgb(68, 10, 43), rgb(106, 30, 66), rgb(116, 23, 64), rgb(125, 17, 62), rgb(143, 5, 58), rgb(146, 4, 52), rgb(150, 2, 46));
+}
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+    background-color: rgb(30, 32, 33);
+}
+
+body.dark-mode .navbar h1 {
+    color: rgb(224, 224, 224);
+}
+
+body.dark-mode #footer_navigate a {
+    color: rgb(224, 224, 224);
+}
+
+body.dark-mode footer a:visited {
+    color: rgb(224, 224, 224);
+}
+
+body.dark-mode * {
+    color: rgb(224, 224, 224);
+}
+
+body.dark-mode #welcome_box,
+body.dark-mode #information_box,
+body.dark-mode #rationale_box {
+    background-color: rgba(32, 35, 37, 0.4);
+}
+
+body.dark-mode .information_container {
+    background-color: rgba(24, 26, 27, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+}
+
+body.dark-mode .information_container p {
+    color: rgb(224, 224, 224);
+}
+
+body.dark-mode form {
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea,
+body.dark-mode button {
+    background-color: rgb(18, 18, 18);
+}
+
+body.dark-mode label[for="search_bar_id"] {
+    color: rgb(224, 224, 224);
+}
+
+body.dark-mode .card {
+    background-color: #333333a5;
+    color: whitesmoke;
+}
+
+body.dark-mode #friend_box h2,
+body.dark-mode #friend_box h3,
+body.dark-mode #friend_box p,
+body.dark-mode #friend_box li {
+    color: whitesmoke;
+}
+
+body.dark-mode *::placeholder {
+    color: rgba(245, 245, 245, 0.866);
+}
