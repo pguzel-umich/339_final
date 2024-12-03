@@ -69,3 +69,7 @@ body.dark-mode #friend_box li {
 body.dark-mode *::placeholder {
     color: rgba(245, 245, 245, 0.866);
 }
+
+body.dark-mode #rationale_box h2 {
+    color: whitesmoke;
+}
