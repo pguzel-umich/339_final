@@ -23,13 +23,13 @@ function setColorScheme() {
 
     if (lightMode) {
         document.body.className = 'light-mode';
-        console.log("Color scheme has been set to light-mode");
+        console.log("Color scheme has been set to light-mode per user preferences");
     } else if (darkMode) {
         document.body.className = 'dark-mode';
-        console.log("Color scheme has been set to dark-mode");
+        console.log("Color scheme has been set to dark-mode per user preferences");
     } else {
-        document.body.className = 'dark-mode';
-        console.log("Color scheme has been set automatically to dark-mode");
+        document.body.className = 'light-mode';
+        console.log("Color scheme has been set automatically to light-mode");
 
     }
 };
